@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Spotify - Your Favourite music is here</title>
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="Bgs/logo.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="brand"><img src="Bgs/logo.png" alt="Spotify" />Spotify</li>
+        <li>Home</li>
+        <li>About</li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="songlist">
+        <h1>"Your Soundtrack, Your Way: Tune in to Your Music World!"</h1>
+        <div class="songItemsContainer">
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">Jaan Nisaar</span>
+            <span class="sobgListPlay"
+              ><span class="timeStamp"
+                >03:58
+                <i id="0" class="far songItemPlay fa-play-circle"></i></span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">Main Rahun Ya Naa </span>
+            <span class="sobgListPlay"
+              ><span class="timeStamp"
+                >05:09
+                <i id="1" class="far songItemPlay fa-play-circle"></i></span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">Nayan ne band rakhi ne</span>
+            <span class="sobgListPlay"
+              ><span class="timeStamp"
+                >03:43
+                <i id="2" class="far songItemPlay fa-play-circle"></i></span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">O Re Piya</span>
+            <span class="sobgListPlay"
+              ><span class="timeStamp"
+                >06:19
+                <i id="3" class="far songItemPlay fa-play-circle"></i></span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">Quafiraana</span>
+            <span class="sobgListPlay"
+              ><span class="timeStamp"
+                >05:41
+                <i id="4" class="far songItemPlay fa-play-circle"></i></span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">Shayad</span>
+            <span class="sobgListPlay"
+              ><span class="timeStamp"
+                >04:07
+                <i id="5" class="far songItemPlay fa-play-circle"></i></span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">Tum se hi</span>
+            <span class="sobgListPlay"
+              ><span class="timeStamp"
+                >05:23
+                <i id="6" class="far songItemPlay fa-play-circle"></i></span
+            ></span>
+          </div>
+        </div>
+      </div>
+      <div class="songbanner"></div>
+    </div>
+          <!-- Add more song items here -->
+        </div>
+      </div>
+      <div class="songbanner"></div>
+    </div>
+
+    <div class="bottom">
+      <input
+        type="range"
+        name="range"
+        id="myProgressBar"
+        value="0"
+        min="0"
+        max="100"
+      />
+      <div class="icons">
+        <!-- Previous, Play/Pause, and Next buttons -->
+        <i class="fas fa-3x fa-step-backward" id="previous"></i>
+        <i id="masterPlay" class="far fa-3x fa-play-circle"></i>
+        <i class="fas fa-3x fa-step-forward" id="next"></i>
+      </div>
+      <div class="songInfo">
+        <img src="Bgs/playing.gif" width="42px" id="gif" alt="" />
+        <span id="masterSongName">salam-e-ishq</span>
+      </div>
+
+      <!-- Volume Control -->
+      <div class="volumeControl">
+        <i class="fas fa-volume-down"></i>
+        <input
+          type="range"
+          id="volumeSlider"
+          min="0"
+          max="100"
+          value="50"
+        />
+        <i class="fas fa-volume-up"></i>
+      </div>
+
+      <!-- Repeat and Shuffle Buttons -->
+      <div class="playbackControl">
+        <i id="repeat" class="fas fa-redo"></i>
+        <i id="shuffle" class="fas fa-random"></i>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/26504e4a1f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
